@@ -11,9 +11,6 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 
 import {MyApp} from './app.component';
 import {HomePage} from './home/home';
-import {TodoComponent} from "./todolist/todo.component";
-import {TodoService} from "./todolist/todo.service";
-import {TodoDetailComponent} from "./todolist/todo-detail.component";
 import {LoginComponent} from "./users/login/login.component";
 import {SignupComponent} from "./users/login/signup.component";
 import {UserService} from "./users/services/users.service";
@@ -28,7 +25,6 @@ import {UserEditComponent} from "./users/profile/user-profile-edit.component";
 import {ToastService} from "./toast/toast.service";
 import {FormsModule} from "@angular/forms";
 import {HttpService} from "./http/http.service";
-import {HelloworldComponent} from "./helloworld/helloworld.component";
 import {ChatComponent} from "./chat/chat.component";
 import {ChatService} from "./chat/chat.service";
 
@@ -40,8 +36,6 @@ export function HttpLoaderFactory(http: Http) {
   declarations: [
     MyApp,
     HomePage,
-    TodoComponent,
-    TodoDetailComponent,
     LoginComponent,
     SignupComponent,
     AddressComponent,
@@ -50,7 +44,6 @@ export function HttpLoaderFactory(http: Http) {
     TelephoneDetailComponent,
     UsersComponent,
     UserEditComponent,
-    HelloworldComponent,
     ChatComponent
   ],
   imports: [
@@ -75,8 +68,6 @@ export function HttpLoaderFactory(http: Http) {
   entryComponents: [
     MyApp,
     HomePage,
-    TodoComponent,
-    TodoDetailComponent,
     LoginComponent,
     SignupComponent,
     AddressComponent,
@@ -85,11 +76,9 @@ export function HttpLoaderFactory(http: Http) {
     TelephoneDetailComponent,
     UsersComponent,
     UserEditComponent,
-    HelloworldComponent,
     ChatComponent
   ],
   providers: [
-    TodoService,
     UserService,
     TelephoneService,
     AddressService,

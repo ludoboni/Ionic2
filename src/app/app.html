@@ -21,12 +21,6 @@
       <button ion-item (click)="openPage(homePage)" menuToggle>
         {{'HOME' | translate}}
       </button>
-      <button ion-item (click)="openPage(todoPage)" menuToggle>
-        {{'TODO' | translate}}
-      </button>
-      <button ion-item (click)="openPage(helloworldPage)" menuToggle>
-        {{'HELLO_WORLD' | translate}}
-      </button>
       <button *ngIf="!isLogged()" ion-item (click)="openPage(loginPage)" menuToggle>
         {{'LOG_IN' | translate}}
       </button>

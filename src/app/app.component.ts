@@ -3,14 +3,11 @@ import {Nav, Platform} from 'ionic-angular';
 import {StatusBar} from '@ionic-native/status-bar';
 import {SplashScreen} from '@ionic-native/splash-screen';
 import {TranslateService} from '@ngx-translate/core';
-import {TodoComponent} from './todolist/todo.component';
 
 import {HomePage} from './home/home';
-
 import {LoginComponent} from "./users/login/login.component";
 import {HttpService} from "./http/http.service";
 import {ToastService} from "./toast/toast.service";
-import {HelloworldComponent} from "./helloworld/helloworld.component";
 import {SignupComponent} from "./users/login/signup.component";
 import {UsersComponent} from "./users/profile/users-profile.component";
 import {ChatComponent} from "./chat/chat.component";
@@ -21,9 +18,7 @@ import {ChatComponent} from "./chat/chat.component";
 
 export class MyApp {
   homePage = HomePage;
-  todoPage = TodoComponent;
   loginPage = LoginComponent;
-  helloworldPage = HelloworldComponent;
   signupPage = SignupComponent;
   profilePage = UsersComponent;
   chatPage = ChatComponent;
